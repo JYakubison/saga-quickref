@@ -1,2 +1,60 @@
 /* Will hold style for the main page
  */
+
+
+
+/* Smart phone, portrait */
+@media (min-width:    0px) and (max-width:  479px) {
+    .fontsize { font-size: 12pt; }
+    .iconsize { width: 44px; height: 44px;}
+    .itemsize { height: 44px; width: 100%; }
+    .modalsize {}
+}
+
+/* Smart phone, landscape */
+@media (min-width:  480px) and (max-width:  767px) {
+    .fontsize { font-size: 11pt; }
+    .iconsize { width: 40px; height: 40px;}
+    .itemsize { height: 40px; width:  50%; }
+    .modalsize {}
+}
+
+/* Tablet, portrait */
+@media (min-width:  768px) and (max-width:  991px) {
+    .fontsize { font-size: 11pt; }
+    .iconsize { width: 40px; height: 40px;}
+    .itemsize { height: 40px; width:  33%; }
+    .modalsize { width: 600px; margin: 30px auto; }
+}
+
+/* Tablet, landscape */
+@media (min-width:  992px) and (max-width: 1199px) {
+    .fontsize { font-size: 12pt; }
+    .iconsize { width: 44px; height: 44px;}
+    .itemsize { height: 44px; width:  33%; }
+    .modalsize { width: 600px; margin: 30px auto; }
+}
+
+/* Small desktop screen */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .fontsize { font-size: 12pt; }
+    .iconsize { width: 44px; height: 44px;}
+    .itemsize { height: 44px; width:  25%; }
+    .modalsize { width: 600px; margin: 30px auto; }
+}
+
+/* Large desktop screen */
+@media (min-width: 1600px) {
+    .fontsize { font-size: 12pt; }
+    .iconsize { width: 44px; height: 44px;}
+    .itemsize { height: 44px; width:  20%; }
+    .modalsize { width: 600px; margin: 30px auto; }
+}
+
+/* Print */
+@media print {
+    .fontsize { font-size: 10pt; }
+    .iconsize { width: 36px; height: 36px;}
+    .itemsize { height: 36px; width:  33%; }
+    .modalsize {}
+}
