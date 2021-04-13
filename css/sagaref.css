@@ -1,7 +1,84 @@
-/* Will hold style for the main page
+/* FONTS
+    font-family: 'Crete Round', serif;
+
+    font-family: 'Rubik', sans-serif;
  */
 
 
+.title{
+    height: 0px;
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    background-color: inherit;
+    color: black;
+    font-size: 32pt;
+    margin-top: 0px;
+    border: solid black
+}
+.background{
+    background-color: moccasin;
+}
+
+/* Info Section Styling
+ */
+
+.info-section{
+    border: 4px solid;
+    border-radius: 20px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    margin-bottom: 4px;
+    page-break-inside: avoid;
+}
+
+.section-content{
+    padding: 4px 4px;
+    border-radius: 20px 20px;
+    background-color: white;
+    border-color: inherit;
+    font-size: inherit;
+    font-family: 'Rubik', sans-serif;
+}
+
+.section-title{
+    height: 32px;
+    padding-left: 16px;
+    padding-right: 8px;
+    font-family: 'Crete', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: inherit;
+    color: white;
+    font-size: 16pt;
+}
+
+
+
+
+
+/* Modal Styling */
+.modal{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    outline: 2px;
+    display: none;
+}
+
+
+/* Modifiers depending on screen size of user */
 
 /* Smart phone, portrait */
 @media (min-width:    0px) and (max-width:  479px) {
