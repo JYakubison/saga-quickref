@@ -6,7 +6,7 @@
 
 
 .title{
-    height: 0px;
+    height: 0;
     font-family: 'Crete Round', serif;
     font-weight: bold;
     background-color: inherit;
@@ -24,7 +24,7 @@
 
 .info-section{
     border: 8px solid;
-    border-radius: 20px 20px;
+    border-radius: 20px 50px;
     position: relative;
     box-sizing: border-box;
     display: flex;
@@ -38,8 +38,9 @@
 
 .section-content{
     padding: 8px 8px;
-    border-radius: 20px 20px;
-    background-color: white;
+    display: inline;
+    border-radius: 20px 50px;
+    background-color: moccasin;
     border-color: inherit;
     font-size: inherit;
     font-family: 'Rubik', sans-serif;
@@ -47,7 +48,9 @@
 
 .section-title{
     height: 32px;
+    display: inline;
     padding-left: 8px;
+    border-radius: 20px 50px;
     padding-right: 8px;
     font-family: 'Crete', serif;
     font-variant: small-caps;
@@ -83,9 +86,14 @@
 }
 
 /* Section Colors */
-#section-fullRound .text{
-    color: black
+#section-fullRound{
+    background-color: black;
+    border-color: black;
 }
+#section-fullRound .text{
+    color: black;
+}
+
 
 /* Modal Styling */
 .modal{
