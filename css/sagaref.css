@@ -13,6 +13,7 @@
     color: black;
     font-size: 32pt;
     margin-top: 0;
+    margin-bottom: 50px;
     border: solid black
 }
 .background{
@@ -32,7 +33,6 @@
     font-family: 'Rubik', sans-serif;
     width: 100%;
     margin-bottom: 8px;
-    margin-top: 50px;
     page-break-inside: avoid;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .section-title{
-    height: 32px;
+    height: 42px;
     display: inline;
     padding-left: 8px;
     border-radius: 20px 50px;
@@ -57,7 +57,18 @@
     font-weight: bold;
     background-color: inherit;
     color: white;
+    font-size: 22pt;
+}
+
+.mid-title{
+    height: 26px;
+    display: inline;
+    padding-left: 26px;
+    padding-right: 8px;
+    font-family: 'Crete', serif;
+    font-variant: small-caps;
     font-size: 16pt;
+    color: white;
 }
 
 .float-right{
@@ -93,10 +104,42 @@
 #section-fullRound .text{
     color: black;
 }
+#mid-fullRound .mid-title{
+    background-color: black;
+    color: #ffffff;
+}
+
+#section-standard{
+    background-color: darkblue;
+    border-color: darkblue;
+}
+#section-standard .text{
+    color: darkblue;
+}
+
+#section-move{
+    background-color: darkred;
+    border-color: darkred;
+}
+#section-move .text{
+    color: darkred;
+}
+
+#section-swift{
+    background-color: indigo;
+    border-color: indigo;
+}
+#section-swift .text{
+    color: indigo;
+}
 
 
 /* Modal Styling */
-.modal{
+.modal-open{
+    overflow: hidden;
+}
+
+.modal-open .modal{
     overflow-x: hidden;
     overflow-y: auto;
 }
