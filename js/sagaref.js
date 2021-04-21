@@ -68,6 +68,9 @@ function init(){
     fillSection(fullRound_data, "basic-fullRound", "Full Round");
     fillSection(fullRound_subData, "sub-fullRound", "Full Round");
     fillSection(standard_data, "basic-standard", "Standard");
+    fillSection(move_data, "basic-move", "Move");
+    fillSection(swift_data, "basic-swift", "Swift");
+
 
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;
