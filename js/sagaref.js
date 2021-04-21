@@ -67,6 +67,7 @@ function init(){
     // Fills the sections referenced by the id, with data found in fullRound_data, and the type text on the right side
     fillSection(fullRound_data, "basic-fullRound", "Full Round");
     fillSection(fullRound_subData, "sub-fullRound", "Full Round");
+    fillSection(standard_data, "basic-standard", "Standard");
 
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;
