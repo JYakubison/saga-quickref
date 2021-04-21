@@ -23,6 +23,49 @@ fullRound_data = [
         ]
     },
     {
+        title: "Run",
+        icon: "sprint",
+        subtitle: "Move 4x your speed",
+        description: "Move up to 4x your speed depending on armor and encumbrance",
+        lines: [
+            "You can Run as a Full-Round Action, moving up to four times your Speed in a straight line (Or three times your Speed in a straight line if wearing Heavy Armor or carrying a Heavy Load).",
+            "See the Endurance skill for Running rules. "
+        ]
+    },
+    {
+        title: "Run",
+        icon: "sprint",
+        subtitle: "Move 4x your speed",
+        description: "Move up to 4x your speed depending on armor and encumbrance",
+        lines: [
+            "You can Run as a Full-Round Action, moving up to four times your Speed in a straight line (Or three times your Speed in a straight line if wearing Heavy Armor or carrying a Heavy Load).",
+            "See the Endurance skill for Running rules. "
+        ]
+    },
+    {
+        title: "Run",
+        icon: "sprint",
+        subtitle: "Move 4x your speed",
+        description: "Move up to 4x your speed depending on armor and encumbrance",
+        lines: [
+            "You can Run as a Full-Round Action, moving up to four times your Speed in a straight line (Or three times your Speed in a straight line if wearing Heavy Armor or carrying a Heavy Load).",
+            "See the Endurance skill for Running rules. "
+        ]
+    },
+    {
+        title: "Run",
+        icon: "sprint",
+        subtitle: "Move 4x your speed",
+        description: "Move up to 4x your speed depending on armor and encumbrance",
+        lines: [
+            "You can Run as a Full-Round Action, moving up to four times your Speed in a straight line (Or three times your Speed in a straight line if wearing Heavy Armor or carrying a Heavy Load).",
+            "See the Endurance skill for Running rules. "
+        ]
+    },
+]
+
+fullRound_subData = [
+    {
         title: "2 Weapon Attack",
         icon: "light-sabers",
         subtitle: "Attacking with two weapons",

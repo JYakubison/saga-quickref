@@ -38,7 +38,6 @@
 
 .section-content{
     padding: 8px 8px;
-    display: inline;
     border-radius: 20px 50px;
     background-color: moccasin;
     border-color: inherit;
@@ -84,6 +83,7 @@
 
 .section-row {
     font-size: inherit;
+    margin-left: 12px;
 }
 
 .section-row::before, .section-row::after{
@@ -96,8 +96,59 @@
     margin-top: 1em;
 }
 
+
+/* Item info */
+.item {
+    margin-bottom: 8px;
+    float: left;
+    display: inline-block;
+    font-size: inherit;
+    vertical-align: top;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.item-icon {
+    float: left;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 4px;
+    color: rgba(255, 255, 255, 0);
+}
+
+
+
+.item-title {
+    font-weight: bold;
+    font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-desc {
+    font-style: italic;
+    font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-text-container {
+    flex: 1;
+    padding-right: 4px;
+    font-size: inherit;
+    height: 100%;
+}
+
+
 /* Section Colors */
-#section-fullRound{
+#section-fullRound, #section-fullRound .item-icon{
     background-color: black;
     border-color: black;
 }
@@ -109,7 +160,8 @@
     color: #ffffff;
 }
 
-#section-standard{
+
+#section-standard, #section-standard .item-icon{
     background-color: darkblue;
     border-color: darkblue;
 }
@@ -117,7 +169,7 @@
     color: darkblue;
 }
 
-#section-move{
+#section-move, #section-move .item-icon{
     background-color: darkred;
     border-color: darkred;
 }
@@ -125,7 +177,7 @@
     color: darkred;
 }
 
-#section-swift{
+#section-swift, #section-swift .item-icon{
     background-color: indigo;
     border-color: indigo;
 }
@@ -156,6 +208,38 @@
     display: none;
 }
 
+.modal-visible {
+    display: block;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 8px;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(85, 85, 85, 0.87);
+    opacity: .75;
+    overflow: hidden;
+}
+
+.modal-container {
+    background-clip: padding-box;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(154, 147, 147, 0.5);
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
 
 /* Modifiers depending on screen size of user */
 
@@ -178,7 +262,7 @@
 /* Tablet, portrait */
 @media (min-width:  768px) and (max-width:  991px) {
     .fontsize { font-size: 11pt; }
-    .iconsize { width: 40px; height: 40px;}
+    .iconsize { width: 40px; max-width: 40px; height: 40px; max-height: 40px;}
     .itemsize { height: 40px; width:  33%; }
     .modalsize { width: 600px; margin: 30px auto; }
 }
@@ -186,7 +270,7 @@
 /* Tablet, landscape */
 @media (min-width:  992px) and (max-width: 1199px) {
     .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
+    .iconsize { width: 44px; max-width: 44px; height: 44px; max-height: 44px;}
     .itemsize { height: 44px; width:  33%; }
     .modalsize { width: 600px; margin: 30px auto; }
 }
@@ -194,7 +278,7 @@
 /* Small desktop screen */
 @media (min-width: 1200px) and (max-width: 1599px) {
     .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
+    .iconsize { width: 44px; max-width: 44px; height: 44px; max-height: 44px;}
     .itemsize { height: 44px; width:  25%; }
     .modalsize { width: 600px; margin: 30px auto; }
 }
@@ -202,7 +286,7 @@
 /* Large desktop screen */
 @media (min-width: 1600px) {
     .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
+    .iconsize { width: 44px; max-width: 44px; height: 44px; max-height: 44px;}
     .itemsize { height: 44px; width:  20%; }
     .modalsize { width: 600px; margin: 30px auto; }
 }
@@ -210,7 +294,8 @@
 /* Print */
 @media print {
     .fontsize { font-size: 10pt; }
-    .iconsize { width: 36px; height: 36px;}
+    .iconsize { width: 36px; max-width: 36px; height: 36px; max-height: 36px;}
     .itemsize { height: 36px; width:  33%; }
     .modalsize {}
+
 }
